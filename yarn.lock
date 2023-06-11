@@ -1225,7 +1225,7 @@
     "@unocss/core" "0.53.1"
     "@unocss/preset-mini" "0.53.1"
 
-"@unocss/reset@0.53.1":
+"@unocss/reset@0.53.1", "@unocss/reset@^0.53.1":
   version "0.53.1"
   resolved "https://registry.npmmirror.com/@unocss/reset/-/reset-0.53.1.tgz#01026e3682c194dda0efb4991a671a3b4e288d31"
   integrity sha512-rkb6mB0JESRFxZXSknZ3TWQ92TmZwpJyF2OV+7GPZrtUk1YBzydH6DfLjLPxyD1xEUtsQsacNHFO7NEmd9WO6A==

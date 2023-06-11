@@ -2,4 +2,5 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@unocss/nuxt", "@vueuse/nuxt", "@nuxt/image"],
+  css: ["@unocss/reset/normalize.css"],
 });

@@ -1,7 +1,18 @@
-<script setup lang="ts"></script>
+<script setup>
+const menus = ref([
+  { label: "首页", to: "/" },
+  { label: "公司简介", to: "/about" },
+  { label: "招聘信息", to: "/" },
+  { label: "招聘职位", to: "/" },
+  { label: "招聘动态", to: "/" },
+  { label: "常用资料", to: "/" },
+  { label: "咨询问答", to: "/" },
+  { label: "系统设置", to: "/" },
+]);
+</script>
 
 <template>
-  <header>
+  <header class="h-20">
     <input
       type="checkbox"
       name="hbr"
@@ -11,7 +22,7 @@
       aria-hidden="true"
     />
     <nav
-      class="fixed z-20 w-full bg-white/90 dark:bg-gray-900/80 backdrop-blur navbar shadow-2xl shadow-gray-600/5 border-b border-gray-100 dark:border-gray-800 peer-checked:navbar-active dark:shadow-none"
+      class="fixed z-20 w-full bg-primary/100 dark:bg-gray-900/80 backdrop-blur navbar shadow-2xl shadow-gray-600/5 border-b border-gray-100 dark:border-gray-800 peer-checked:navbar-active dark:shadow-none"
     >
       <div class="xl:container m-auto px-6 md:px-12 lg:px-6">
         <div
@@ -69,22 +80,12 @@
                 class="space-y-6 tracking-wide font-medium text-base lg:text-sm lg:flex lg:space-y-0"
               >
                 <NuxtLink
-                  to="/"
+                  v-for="(route, index) in menus"
+                  :key="route.label + index"
+                  :to="route.to"
                   class="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
                 >
-                  <span>Home</span>
-                </NuxtLink>
-                <NuxtLink
-                  to="/about"
-                  class="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
-                >
-                  <span>About</span>
-                </NuxtLink>
-                <NuxtLink
-                  href="#"
-                  class="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
-                >
-                  <span>Services</span>
+                  <span>{{ route.label }}</span>
                 </NuxtLink>
               </div>
             </div>

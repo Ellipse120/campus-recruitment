@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "campus-recruitment",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -13,11 +13,10 @@
     "@nuxt/image": "^1.0.0-rc.1",
     "@types/node": "^18",
     "@unocss/nuxt": "^0.53.1",
+    "@unocss/reset": "^0.53.1",
+    "@vueuse/components": "^10.1.2",
     "@vueuse/core": "^10.1.2",
     "@vueuse/nuxt": "^10.1.2",
     "nuxt": "^3.5.2"
-  },
-  "dependencies": {
-    "@unocss/reset": "^0.53.1"
   }
 }

@@ -3,7 +3,7 @@
 <template>
   <div class="grid grid-rows-[auto_1fr_auto] h-screen">
     <PageHeader />
-    <div class="p-4">
+    <div class="">
       <slot />
     </div>
     <PageFooter />

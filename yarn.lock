@@ -4469,7 +4469,7 @@ nuxi@3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
-nuxt@^3.4.3, nuxt@^3.5.2:
+nuxt@^3.4.3, nuxt@^3.5.3:
   version "3.5.3"
   resolved "https://registry.npmmirror.com/nuxt/-/nuxt-3.5.3.tgz#2997a62b8c1088c4b8eeae358838732f5dad0653"
   integrity sha512-fG39BZ5N5ATtmx2vuxN8APQPSlSsCDpfkJ0k581gMc7eFztqrBzPncZX5w3RQLW7AiGBE2yYEfqiwC6AVODBBg==
@@ -5058,6 +5058,16 @@ pretty-bytes@^6.1.0:
   version "6.1.0"
   resolved "https://registry.npmmirror.com/pretty-bytes/-/pretty-bytes-6.1.0.tgz#1d1cc9aae1939012c74180b679da6684616bf804"
   integrity sha512-Rk753HI8f4uivXi4ZCIYdhmG1V+WKzvRMg/X+M42a6t7D07RcmopXJMDNk6N++7Bl75URRGsb40ruvg7Hcp2wQ==
+
+primeicons@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npmmirror.com/primeicons/-/primeicons-6.0.1.tgz#431fa7c79825934eefd62087d8e1faa6a9e376ad"
+  integrity sha512-KDeO94CbWI4pKsPnYpA1FPjo79EsY9I+M8ywoPBSf9XMXoe/0crjbUK7jcQEDHuc0ZMRIZsxH3TYLv4TUtHmAA==
+
+primevue@^3.29.2:
+  version "3.29.2"
+  resolved "https://registry.npmmirror.com/primevue/-/primevue-3.29.2.tgz#de3fd996a84353e6a817023f7c43b3f368b4a121"
+  integrity sha512-zMk1w5AySLR6ipWH2fONKtDabHrvRZhZFI1OdoiBDdMhZpARmWuCXwE/ZFusUh5Te0RBEd3iVCiizjUkSRraRQ==
 
 proc-log@^3.0.0:
   version "3.0.0"

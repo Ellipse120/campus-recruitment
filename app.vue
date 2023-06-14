@@ -1,6 +1,4 @@
-<script setup>
-import "@unocss/reset/tailwind.css";
-</script>
+<script setup></script>
 
 <template>
   <div class="bg-white dark:bg-gray-900">
@@ -18,10 +16,5 @@ body,
   margin: 0;
   padding: 0;
   color-scheme: normal;
-}
-
-a {
-  /* color: inherit; */
-  /* text-decoration: inherit; */
 }
 </style>

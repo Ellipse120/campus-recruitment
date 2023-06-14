@@ -17,6 +17,8 @@
     "@vueuse/components": "^10.1.2",
     "@vueuse/core": "^10.1.2",
     "@vueuse/nuxt": "^10.1.2",
-    "nuxt": "^3.5.2"
+    "nuxt": "^3.5.3",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.29.2"
   }
 }

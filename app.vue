@@ -17,4 +17,12 @@ body,
   padding: 0;
   color-scheme: normal;
 }
+
+.router-link-active {
+  @apply underline decoration-3 decoration-dotted rounded underline-offset-6 underline-indigo-600 text-indigo-600 transition-colors duration-200;
+}
+
+.router-link-exact-active {
+  @apply underline decoration-3 decoration-dotted rounded underline-offset-6 underline-indigo-600 text-indigo-600 transition-colors duration-200;
+}
 </style>

@@ -1,6 +1,4 @@
 <script setup>
-import { vOnClickOutside } from "@vueuse/components";
-
 import logoUrl from "@/assets/imgs/logo.png";
 
 const logo = ref(logoUrl);
@@ -20,9 +18,6 @@ const corporation = useRuntimeConfig().app.corporation;
 const [visible, toggle] = useToggle();
 
 const menuRef = ref(null);
-// onClickOutside(menuRef, (event) => {
-//   toggle(false);
-// });
 </script>
 
 <template>
@@ -36,22 +31,22 @@ const menuRef = ref(null);
       aria-hidden="true"
     />
     <nav
-      class="fixed z-20 w-full bg-primary/70 dark:bg-gray-900/80 backdrop-blur navbar shadow-2xl shadow-gray-600/5 border-b border-gray-100 dark:border-gray-800 peer-checked:navbar-active dark:shadow-none"
+      class="fixed z-20 w-full bg-blue-800/20 text-primary dark:bg-gray-700/80 backdrop-blur navbar shadow-2xl shadow-gray-600/5 border-b border-gray-100 dark:border-gray-800 peer-checked:navbar-active dark:shadow-none"
     >
       <div class="xl:container m-auto px-6 md:px-12 lg:px-6">
         <div
           class="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0 lg:py-5"
         >
           <div class="w-full items-center flex justify-between lg:w-auto">
-            <NuxtLink
+            <a
               class="relative z-10 flex items-center justify-center"
-              to="/"
+              href="/"
               aria-label="logo"
               @click="toggle(false)"
             >
               <img :src="logo" class="h-10 w-12" />
               {{ corporation }}
-            </NuxtLink>
+            </a>
             <label
               for="hbr"
               class="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden"
@@ -80,7 +75,7 @@ const menuRef = ref(null);
                   v-for="(route, index) in menus"
                   :key="route.label + index"
                   :to="route.to"
-                  class="block px-2 lg:px-1 transition duration-400 hover:text-indigo-500 dark:hover:text-primaryLight"
+                  class="block text-sky-500 px-2 lg:px-1 transition duration-400 hover:text-indigo-500 dark:hover:text-primaryLight"
                   @click="toggle()"
                 >
                   <span>{{ route.label }}</span>

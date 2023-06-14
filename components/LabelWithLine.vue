@@ -15,8 +15,8 @@
 <script setup lang="ts">
 export interface Props {
   title: String;
-  titleClass: String;
-  borderClass: String;
+  titleClass?: String;
+  borderClass?: String;
 }
 
 withDefaults(defineProps<Props>(), {

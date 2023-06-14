@@ -1,7 +1,7 @@
 <script setup lang="ts">
 export interface Props {
   title: String;
-  titleClass: String;
+  titleClass?: String;
 }
 
 withDefaults(defineProps<Props>(), {
@@ -17,7 +17,7 @@ withDefaults(defineProps<Props>(), {
     </div>
 
     <div
-      class="absolute top-3 left-4 w-full tracking-widest font-bold opacity-10"
+      class="absolute top-2 left-4 w-40 tracking-widest text-left font-bold opacity-10"
       :class="titleClass"
     >
       {{ title }}

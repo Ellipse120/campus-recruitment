@@ -1,5 +1,7 @@
 <script setup></script>
 
 <template>
-  <div>about</div>
+  <div>recruitment-posts</div>
 </template>
+
+<style></style>

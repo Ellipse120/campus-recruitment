@@ -1,5 +1,7 @@
 <script setup></script>
 
 <template>
-  <div>about</div>
+  <div>consultation-qa</div>
 </template>
+
+<style></style>

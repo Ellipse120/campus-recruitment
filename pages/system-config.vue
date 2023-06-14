@@ -1,5 +1,7 @@
 <script setup></script>
 
 <template>
-  <div>about</div>
+  <div>system-config</div>
 </template>
+
+<style></style>

@@ -18,12 +18,9 @@ function handleError() {
   <NuxtLayout>
     <div flex="~ col" h-screen text-center items-center justify-center gap4>
       <div text-3xl>
-        {{ is404 ? "This page could not be found" : "An error occurred" }}
+        {{ is404 ? "找不到页面" : "页面报错了" }}
       </div>
-      <div text-xl op50>
-        Looks like you've followed a broken link or entered a URL that doesn't
-        exist on this site.
-      </div>
+      <div text-xl op50>您正在访问不存在的页面，请检查URL是否正确</div>
       <pre v-if="isDev">{{ error }}</pre>
       <Button label="返回" @click="handleError"> </Button>
     </div>

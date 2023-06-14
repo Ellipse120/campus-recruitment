@@ -1,6 +1,8 @@
 <script setup>
+definePageMeta({
+  name: "首页",
+});
 const videoRef = ref(null);
-
 const { playing, currentTime, duration, volume } = useMediaControls(videoRef, {
   src: "/assets/intro-480p.mp4",
 });

@@ -1,5 +1,7 @@
 <script setup></script>
 
 <template>
-  <div>about</div>
+  <div>user center</div>
 </template>
+
+<style></style>

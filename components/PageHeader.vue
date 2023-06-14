@@ -2,17 +2,7 @@
 import logoUrl from "@/assets/imgs/logo.png";
 
 const logo = ref(logoUrl);
-const menus = ref([
-  { label: "首页", to: "/" },
-  { label: "公司简介", to: "/about" },
-  { label: "招聘信息", to: "/" },
-  { label: "招聘职位", to: "/" },
-  { label: "招聘动态", to: "/" },
-  { label: "常用资料", to: "/" },
-  { label: "咨询问答", to: "/" },
-  { label: "相关政策", to: "/" },
-  { label: "系统设置", to: "/" },
-]);
+const menus = ref(useRuntimeConfig().app.routes);
 const corporation = useRuntimeConfig().app.corporation;
 
 const [visible, toggle] = useToggle();
@@ -87,13 +77,13 @@ const menuRef = ref(null);
               class="border-gray-200 dark:border-gray-700 flex flex-col sm:flex-row lg:space-y-0 md:w-max lg:border-l"
             >
               <NuxtLink
-                to="#"
+                to="/"
                 class="flex items-center justify-center sm:px-6 transition-all duration-300 text-indigo-600 dark:text-primaryLight hover:text-red-500"
               >
                 <span class="text-sm font-semibold">注册</span>
               </NuxtLink>
               <NuxtLink
-                to="#"
+                to="/login"
                 class="flex items-center justify-center sm:px-6 transition-all duration-300 text-indigo-600 dark:text-primaryLight hover:text-red-500"
               >
                 <span class="text-sm font-semibold">登录</span>

@@ -1,8 +1,10 @@
 <script setup>
 import { useField, useForm } from "vee-validate";
 
-const activeTab = ref("账号登录");
-const tabs = ["账号登录", "短信验证码登录"];
+const label1 = ref("账号登录");
+const label2 = ref("短信验证码登录");
+const activeTab = ref(null);
+const tabs = ref([label1.value, label2.value]);
 const captchaImg = ref(null);
 const [loading, toggle] = useToggle();
 const [bool1, toggle1] = useToggle();
@@ -41,7 +43,7 @@ const doLogin = handleSubmit((values) => {
         </v-tabs>
 
         <v-window v-model="activeTab">
-          <v-window-item step="账号登录">
+          <v-window-item :value="label1">
             <v-container fluid>
               <form @submit.prevent="submit">
                 <v-text-field
@@ -104,12 +106,12 @@ const doLogin = handleSubmit((values) => {
             </v-container>
           </v-window-item>
 
-          <v-window-item> 2 </v-window-item>
+          <v-window-item :value="label2">
+            <v-container>todo</v-container>
+          </v-window-item>
         </v-window>
 
-        <v-btn type="submit" color="primary" block rounded="xs" size="x-large">
-          登录
-        </v-btn>
+        <v-btn color="primary" block rounded="xs" size="x-large"> 登录 </v-btn>
       </v-card>
     </form>
   </div>

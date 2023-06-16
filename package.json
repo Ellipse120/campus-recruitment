@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@vee-validate/nuxt": "^4.9.6",
+    "lodash": "^4.17.21",
     "vite-plugin-vuetify": "^1.0.2"
   }
 }

@@ -2,7 +2,7 @@
 
 <template>
   <div class="grid grid-rows-[auto_1fr_auto] h-screen">
-    <PageHeader />
+    <PageHeaderNew />
     <div class="">
       <slot />
     </div>

@@ -46,7 +46,7 @@ const menuRef = ref(null);
             <div class="text-blue-700 pl-3 text-3xl pr-10">应届大学生招聘平台</div>
             <div class="pl-10">
               <Button label="登录" class="mr-2 h-8" @click="jumpTo('login')" />
-              <Button label="注册" class="h-8" />
+              <Button label="注册" class="h-8" @click="jumpTo('register')" />
             </div>
           </div>
           <div

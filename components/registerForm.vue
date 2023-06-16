@@ -54,17 +54,17 @@ const { ruleRequired, ruleName, ruleEmail, rulePassword } = useFormRules()
               阅读并接受
               <v-tooltip location="bottom">
                 <template v-slot:activator="{ props }">
-                  <a v-bind="props" class="text-primary" target="_blank" href="https://vuetifyjs.com">
+                  <NuxtLink v-bind="props" to="/privacy-policy" class="text-primary">
                     《隐私政策》
-                  </a>
+                  </NuxtLink>
                 </template>
                 点击查看详情
               </v-tooltip>
               <v-tooltip location="bottom">
                 <template v-slot:activator="{ props }">
-                  <a v-bind="props" class="text-primary" target="_blank" href="https://vuetifyjs.com">
+                  <NuxtLink v-bind="props" to="/commitment-letter" class="text-primary">
                     《高校毕业生求职承诺书》
-                  </a>
+                  </NuxtLink>
                 </template>
                 点击查看详情
               </v-tooltip>
@@ -73,7 +73,7 @@ const { ruleRequired, ruleName, ruleEmail, rulePassword } = useFormRules()
         </v-checkbox>
         <v-btn class="w-full mb-2 bg-primary" size="large">注册</v-btn>
         <div class="text-center mb-5">
-          <a class="text-gray-400" target="_blank" href="/login">已有账号登录</a>
+          <NuxtLink class="text-gray-400" to="/login">已有账号登录</NuxtLink>
         </div>
       </form>
     </v-sheet>

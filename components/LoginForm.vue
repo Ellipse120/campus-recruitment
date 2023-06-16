@@ -150,7 +150,7 @@ const doLogin = handleSubmit((values) => {
 
         <div class="flex justify-between my-4">
           <v-btn size="small">忘记密码</v-btn>
-          <v-btn size="small">立即注册</v-btn>
+          <v-btn size="small" @click="navigateTo('/register')">立即注册</v-btn>
         </div>
       </div>
     </v-sheet>

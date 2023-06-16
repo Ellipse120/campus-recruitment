@@ -1,7 +1,7 @@
 <template>
   <div>
     <VApp>
-      <PageHeader />
+      <PageHeaderNew />
       <VMain>
         <slot />
       </VMain>

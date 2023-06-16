@@ -15,7 +15,7 @@ function handleError() {
 </script>
 
 <template>
-  <NuxtLayout>
+  <NuxtLayout name="vuetify">
     <div flex="~ col" h-screen text-center items-center justify-center gap4>
       <div text-3xl>
         {{ is404 ? "找不到页面" : "页面报错了" }}

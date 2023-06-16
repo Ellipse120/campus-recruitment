@@ -24,6 +24,9 @@
     "vuetify": "^3.3.3"
   },
   "dependencies": {
+    "@tiptap/pm": "^2.0.3",
+    "@tiptap/starter-kit": "^2.0.3",
+    "@tiptap/vue-3": "^2.0.3",
     "@vee-validate/nuxt": "^4.9.6",
     "lodash": "^4.17.21",
     "vite-plugin-vuetify": "^1.0.2"

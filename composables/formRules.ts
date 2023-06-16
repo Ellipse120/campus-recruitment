@@ -8,5 +8,6 @@ export const useFormRules = () => {
       return pattern.test(value) || "邮件格式不正确";
     },
     rulePassword: (v: string) => (!!v && v.length >= 6) || "至少6个字符",
+    ruleName: (v: string) => (!!v && v.length >= 2) || "至少两个字符",
   };
 };

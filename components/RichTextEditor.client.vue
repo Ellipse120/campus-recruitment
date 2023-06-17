@@ -1,20 +1,20 @@
 <script setup>
-import { Editor, EditorContent } from "@tiptap/vue-3";
 import StarterKit from "@tiptap/starter-kit";
+import { Editor, EditorContent } from "@tiptap/vue-3";
 
 const props = defineProps({
-  value: {
+  modelValue: {
     type: String,
     default: "",
   },
 });
 
-const emit = defineEmits(["input"]);
+const emit = defineEmits(["update:modelValue"]);
 
 const editor = ref(null);
 
 watch(
-  () => props.value,
+  () => props.modelValue,
   (v) => {
     const isSame = editor.value.getHTML() === v;
     if (isSame) {
@@ -26,15 +26,21 @@ watch(
 
 onMounted(() => {
   editor.value = new Editor({
-    content: props.value.value,
+    content: props.modelValue,
     extensions: [StarterKit],
+    editorProps: {
+      attributes: {
+        class:
+          "border m-4 prose prose-coolgray max-w-none dark:prose-invert prose-sm sm:prose-base lg:prose-lg xl:prose-2xl focus:outline-none",
+      },
+    },
+    injectCSS: false,
     onUpdate: () => {
-      console.log(editor.value.getHTML());
       // HTML
-      emit("input", editor.value.getHTML());
+      emit("update:modelValue", editor.value.getHTML());
 
       // JSON
-      // emit('input', editor.value.getJSON())
+      // emit('update:modelValue', editor.value.getJSON())
     },
   });
 });
@@ -45,7 +51,5 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <ClientOnly>
-    <EditorContent :editor="editor"></EditorContent>
-  </ClientOnly>
+  <EditorContent :editor="editor"></EditorContent>
 </template>

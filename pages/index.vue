@@ -2,10 +2,7 @@
 definePageMeta({
   name: "首页",
 });
-const videoRef = ref(null);
-const { playing, currentTime, duration, volume } = useMediaControls(videoRef, {
-  src: "/assets/intro-480p.mp4",
-});
+
 const currentYear = ref(useDateFormat(new Date(), "YYYY"));
 
 const flowList = ref([
@@ -38,16 +35,6 @@ const flowList = ref([
 
 <template>
   <div class="">
-    <div class="relative">
-      <video ref="videoRef" class="w-full" controls />
-
-      <div
-        class="absolute top-40% left-45% bg-blue-400 text-white px-16 py-4 rounded-3xl"
-      >
-        点击投递简历
-      </div>
-    </div>
-
     <div class="text-center bg-blue-100/40 p-4 mt-16 relative">
       <div
         class="absolute right-8 -top-16 text-right text-9xl text-red-300/20 font-extrabold"
@@ -88,7 +75,7 @@ const flowList = ref([
 
     <div class="grid grid-cols-2 gap-2">
       <div>
-        <img src="/assets/imgs/u43.png" alt="train" class="w-full" />
+        <img src="/assets/imgs/u43.webp" alt="train" class="w-full" />
       </div>
 
       <div>

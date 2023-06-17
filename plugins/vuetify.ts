@@ -1,8 +1,15 @@
 import { createVuetify } from "vuetify";
+import { zhHans } from "vuetify/locale";
 
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
     ssr: true,
+    locale: {
+      locale: "zhHans",
+      messages: {
+        zhHans,
+      },
+    },
     defaults,
     // add theme
     theme: {

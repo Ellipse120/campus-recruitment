@@ -9,9 +9,7 @@ export const defaults: DefaultsInstance = {
   },
   VBtn: {
     variant: "outlined",
-    height: 38,
     rounded: "xs",
-    size: "x-large",
   },
   VTextField: {
     color: "primary",

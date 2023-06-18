@@ -1,5 +1,5 @@
 <script setup>
-import UserManage from "./admin/-user-manage.vue";
+import UserManage from "@/pages/admin/-user-manage.vue";
 
 const tab = ref("option-1");
 </script>

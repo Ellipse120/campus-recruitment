@@ -1,6 +1,11 @@
 <script setup>
 import { VDataTable } from "vuetify/labs/VDataTable";
 
+definePageMeta({
+  layout: false,
+  middleware: "block",
+});
+
 const selected = ref([]);
 const [dialog, toggle] = useToggle();
 const [dialogDelete, toggleDelete] = useToggle();

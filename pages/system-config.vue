@@ -1,4 +1,6 @@
 <script setup>
+import UserManage from "./admin/user-manage.vue";
+
 const tab = ref("option-1");
 </script>
 
@@ -14,33 +16,33 @@ const tab = ref("option-1");
       </div>
     </div>
 
-    <div class="grid grid-cols-[1fr_8fr] w-full">
-      <v-tabs v-model="tab" direction="vertical" color="primary">
-        <v-tab value="option-1">
-          <v-icon start> mdi-account </v-icon>
-          Option 1
-        </v-tab>
-        <v-tab value="option-2">
-          <v-icon start> mdi-lock </v-icon>
-          Option 2
-        </v-tab>
-        <v-tab value="option-3">
-          <v-icon start> mdi-access-point </v-icon>
-          Option 3
-        </v-tab>
-      </v-tabs>
+    <div class="grid grid-cols-[1fr_8fr] w-full xl:w-300">
+      <div>
+        <v-tabs v-model="tab" direction="vertical" color="primary">
+          <v-tab value="option-1">
+            <v-icon start> mdi-account </v-icon>
+            用户管理
+          </v-tab>
+          <v-tab value="option-2">
+            <v-icon start> mdi-lock </v-icon>
+            Option 2
+          </v-tab>
+          <v-tab value="option-3">
+            <v-icon start> mdi-access-point </v-icon>
+            Option 3
+          </v-tab>
+        </v-tabs>
+      </div>
 
       <v-window v-model="tab">
         <v-window-item value="option-1">
           <v-card flat>
-            <v-card-text> 1 </v-card-text>
+            <UserManage />
           </v-card>
         </v-window-item>
         <v-window-item value="option-2">
           <v-card flat>
             <v-card-text>
-              2
-
               <p class="mb-0">
                 Donec venenatis vulputate lorem. Aenean viverra rhoncus pede. In
                 dui magna, posuere eget, vestibulum et, tempor auctor, justo.
